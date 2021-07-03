@@ -11,20 +11,20 @@ if (url.searchParams.get('by') != null) {
 
 
 document.querySelector(".tombol").addEventListener('click', function() {
-    Swal.fire("Hallo nayy", "Aku ada pertanyaan nih buat kamu ", "question").then(function() {
+    Swal.fire("assalamualaikum humairaa", "Aku ada pertanyaan nih buat kamu ", "question").then(function() {
         Swal.fire("Jawab yang jujur ya!").then(function() {
-            Swal.fire("Awas aja kalau kamu bohong karena bohong itu dosa", "", "error").then(function() {
+            Swal.fire("Awas aja kalau kamu bohong karena bohong adalah salah satu ciri2 orang munafik wlee ", "", "error").then(function() {
 
                 const {
                     value: name
                 } = Swal.fire({
-                    title: 'Masukin nama kamu dulu (ini buat basa basi aja sih nay hehe)',
+                    title: 'Masukin nama kamu dulu ya hehe',
                     input: 'text',
                     inputLabel: '',
                     showCancelButton: true,
                     inputValidator: (value) => {
                         if (!value) {
-                            return 'Isi dulu dong nayaa'
+                            return 'Isi dulu heii'
                         } else {
                             nama = value; 
                         }
