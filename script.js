@@ -11,14 +11,14 @@ if (url.searchParams.get('by') != null) {
 
 
 document.querySelector(".tombol").addEventListener('click', function() {
-    Swal.fire("assalamualaikum humairaa", "Aku ada pertanyaan nih buat kamu ", "question").then(function() {
+    Swal.fire("Hey beibb", "I have some question for u ", "question").then(function() {
         Swal.fire("Jawab yang jujur ya!").then(function() {
-            Swal.fire("Awas aja kalau kamu bohong karena bohong adalah salah satu ciri2 orang munafik wlee ", "", "error").then(function() {
+            Swal.fire("jangan boong ya, gapapa jujur aja walaupun kadang jujur itu menyakitkan :( ", "", "error").then(function() {
 
                 const {
                     value: name
                 } = Swal.fire({
-                    title: 'Masukin nama kamu dulu ya hehe',
+                    title: 'Input your name first! ',
                     input: 'text',
                     inputLabel: '',
                     showCancelButton: true,
@@ -31,7 +31,7 @@ document.querySelector(".tombol").addEventListener('click', function() {
                     }
                 }).then(function() {
                     const pertanyaan = Swal.fire({
-                        title: `${nama} apa bener ${sender} itu baik?`,
+                        title: `${nama} sayang ${sender} gaa?`,
                         showDenyButton: true,
                         showCancelButton: false,
                         confirmButtonText: `iya`,
@@ -39,9 +39,9 @@ document.querySelector(".tombol").addEventListener('click', function() {
                     }).then((result) => {
                         /* Read more about isConfirmed, isDenied below */
                         if (result.isConfirmed) {
-                            Swal.fire(`${sender} dimata ${nama} seberapa baik ?`).then(function() {
+                            Swal.fire(` seberapa sayang ${nama} sama ${sender} ?`).then(function() {
                                 Swal.fire({
-                                    title: 'Seberapa baik emangnya?',
+                                    title: 'Seberapa sayang emangnya?',
                                     icon: 'question',
                                     input: 'range',
                                     inputLabel: 'Antara 1 - 100 ya',
