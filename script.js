@@ -34,7 +34,7 @@ document.querySelector(".tombol").addEventListener('click', function() {
                         title: `${nama} suka jalan sama ${sender} gaa?`,
                         showDenyButton: true,
                         showCancelButton: false,
-                        confirmButtonText: `iya`,
+                        confirmButtonText: `sukakk`,
                         denyButtonText: `Enggak`,
                     }).then((result) => {
                         /* Read more about isConfirmed, isDenied below */
