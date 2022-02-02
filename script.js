@@ -58,8 +58,8 @@ document.querySelector(".tombol").addEventListener('click', function() {
                                             title: `next time, ${nama} mau main sama ${sender} lagi gaa hehe `,
                                             showDenyButton: true,
                                             showCancelButton: false,
-                                            confirmButtonText: `iya :(`,
-                                            denyButtonText: `Enggak sama sekali`,
+                                            confirmButtonText: `mau dong`,
+                                            denyButtonText: `Enggak ah`,
                                         }).then((result) => {
                                             /* Read more about isConfirmed, isDenied below */
                                             if (result.isConfirmed) {
