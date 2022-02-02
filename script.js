@@ -13,7 +13,7 @@ if (url.searchParams.get('by') != null) {
 document.querySelector(".tombol").addEventListener('click', function() {
     Swal.fire("Hey beibb", "I have some question for u ", "question").then(function() {
         Swal.fire("Jawab yang jujur ya!").then(function() {
-            Swal.fire("jangan boong ya, gapapa jujur aja walaupun kadang jujur itu menyakitkan :( ", "", "error").then(function() {
+            Swal.fire("jangan boong ya, gapapa jujur aja hehe ", "", "error").then(function() {
 
                 const {
                     value: name
@@ -24,14 +24,14 @@ document.querySelector(".tombol").addEventListener('click', function() {
                     showCancelButton: true,
                     inputValidator: (value) => {
                         if (!value) {
-                            return 'Isi dulu sayangg'
+                            return 'Isi dulu napasi :('
                         } else {
                             nama = value; 
                         }
                     }
                 }).then(function() {
                     const pertanyaan = Swal.fire({
-                        title: `${nama} sayang ${sender} gaa?`,
+                        title: `${nama} suka jalan sama ${sender} gaa?`,
                         showDenyButton: true,
                         showCancelButton: false,
                         confirmButtonText: `iya`,
@@ -39,9 +39,9 @@ document.querySelector(".tombol").addEventListener('click', function() {
                     }).then((result) => {
                         /* Read more about isConfirmed, isDenied below */
                         if (result.isConfirmed) {
-                            Swal.fire(` seberapa sayang ${nama} sama ${sender} ?`).then(function() {
+                            Swal.fire(` seberapa suka ${nama} jalan sama ${sender} ?`).then(function() {
                                 Swal.fire({
-                                    title: 'Seberapa sayang emangnya?',
+                                    title: 'Seberapa suka emangnya?',
                                     icon: 'question',
                                     input: 'range',
                                     inputLabel: 'Antara 1 - 100 ya',
@@ -55,7 +55,7 @@ document.querySelector(".tombol").addEventListener('click', function() {
                                     val = e.value
                                     Swal.fire(`Makasih ya udah jawab pertanyaan ${sender} ${val}%`).then(function() {
                                         Swal.fire({
-                                            title: `Sekarang ${nama} lagi mikirin ${sender} gaa hehe `,
+                                            title: `next time, ${nama} mau main sama ${sender} lagi gaa hehe `,
                                             showDenyButton: true,
                                             showCancelButton: false,
                                             confirmButtonText: `iya :(`,
