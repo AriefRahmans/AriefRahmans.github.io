@@ -78,7 +78,7 @@ document.querySelector(".tombol").addEventListener('click', function() {
                                 })
                             })
                         } else if (result.isDenied) {
-                            Swal.fire(`Yakin ga mikirin ${sender}?`, '', 'error').then(function() {
+                            Swal.fire(`Yakin ga mau main lagi sama ${sender}?`, '', 'error').then(function() {
                                 Swal.fire('Yaudah dehh okee  :((')
                             })
                         }
